@@ -1,0 +1,122 @@
+ 
+==First Initialize empty Git repository===
+F:\ASDM_Exam>git init
+Initialized empty Git repository in F:/ASDM_Exam/.git/
+
+Que 6 : 
+====> 
+ F:\ASDM_Exam>git add .
+
+ F:\ASDM_Exam>git status
+On branch master
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Poem.java	
+
+Que 7 :
+ ====>
+ 
+F:\ASDM_Exam>git commit -m "Committing java code"
+[master (root-commit) c5d6e2f] Committing java code
+ 1 file changed, 8 insertions(+)
+ create mode 100644 Poem.java
+
+Que 8 :
+====> code Updated 
+
+Que 9 :
+1)
+===>
+F:\ASDM_Exam>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Poem.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+2)
+===>
+F:\ASDM_Exam>git diff
+diff --git a/Poem.java b/Poem.java
+index e9320da..9e6aa1e 100644
+--- a/Poem.java
++++ b/Poem.java
+@@ -1,8 +1,8 @@
+ public class Poem{
+    public static void main(String[]args)
+      {
+-        System.out.println(" Twinkle, twinkle, little star);
+-
++        System.out.println(" Twinkle, twinkle, little star");
++        System.out.println(" Welcome To ASDM Module");
+
+  }
+  }
+\ No newline at end of file
+
+3)
+===>
+F:\ASDM_Exam>git branch b1 
+ =Branch is created (b1)
+
+4)
+===>
+F:\ASDM_Exam>git merge b1
+Already up to date.
+
+Que 10 : ASDM_Exam repository is created on GitHub
+==> ShubhadaShinde/ASDM_Exam Public
+
+Que 11 :
+===> 
+F:\ASDM_Exam>git remote add origin https://github.com/ShubhadaShinde/ASDM_Exam.git
+
+F:\ASDM_Exam>git remote -v
+origin  https://github.com/ShubhadaShinde/ASDM_Exam.git (fetch)
+origin  https://github.com/ShubhadaShinde/ASDM_Exam.git (push)
+
+F:\ASDM_Exam>git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 837 bytes | 167.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ShubhadaShinde/ASDM_Exam.git
+ * [new branch]      master -> master
+
+Que 12 :
+===>
+ 
+F:\ASDM_Exam>git pull https://github.com/ShubhadaShinde/ASDM_Exam.git
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 935 bytes | 5.00 KiB/s, done.
+From https://github.com/ShubhadaShinde/ASDM_Exam
+ * branch            HEAD       -> FETCH_HEAD
+Updating 30184db..0ff3987
+Fast-forward
+ javaScriptEx4.html | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+ create mode 100644 javaScriptEx4.html
+
+Que 13 :
+===>
+F:\ASDM_Exam>git branch b2
+
+F:\ASDM_Exam>git checkout b2
+Switched to branch 'b2'
+
+F:\ASDM_Exam>git branch
+  b1
+* b2
+  master
+
+Que 14 :
+===>
